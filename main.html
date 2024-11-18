@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextFrame Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<body class="bg-black text-white">
+
+<!-- 헤더 섹션 -->
+<header class="flex justify-between items-center px-14 pt-11 pb-8">
+    <!-- 로고 -->
+    <a href = "main.html" class="text-4xl font-bold cursor-pointer hover:text-gray-700 transition duration-300">NextFrame</a>
+    
+    <!-- 햄버거 메뉴 -->
+    <div id="menu-button" class="text-2xl font-bold cursor-pointer hover:text-gray-700 transition duration-300 absolute left-1/2 transform -translate-x-1/2">
+        ☰
+    </div>
+    <!-- 로그인 버튼 -->
+    <div class="flex items-center text-white font-semibold cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A10.943 10.943 0 0112 15c2.326 0 4.468.69 6.121 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0zM12 3c4.418 0 8 3.582 8 8a8 8 0 01-16 0c0-4.418 3.582-8 8-8z" />
+        </svg>
+        Log In
+    </div>
+</header>
+
+
+
+<!-- 부가 메뉴창 -->
+<div id="dropdown-menu" class="hidden fixed top-16 left-1/2 transform -translate-x-1/2 bg-white border border-gray-800 w-48 py-2 shadow-lg">
+    <a href="profile.html" class="block px-4 py-2 text-black hover:bg-gray-700 hover:text-white">프로필</a>
+    <a href="#" class="block px-4 py-2 text-black hover:bg-gray-700 hover:text-white">-공사중-</a>
+    <a href="#" class="block px-4 py-2 text-black hover:bg-gray-700 hover:text-white">-공사중-</a>
+    <a href="#" class="block px-4 py-2 text-black hover:bg-gray-700 hover:text-white">-공사중-</a>
+</div>
+
+
+<!-- 갤러리 섹션 -->
+<main id="gallery" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-0.5 px-10 py-10">
+</main>
+
+<!-- 풋터 섹션 -->
+<footer class="bg-black  text-white px-16 py-10">
+    <!-- 상단 섹션 -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-8">
+        <!-- NEXT FRAME -->
+        <div>
+            <h3 class="text-lg font-bold mb-4">NextFrame 구조</h3>
+            <ul>
+                <li class="mb-2"><a href="enter.html" class="hover:underline">입장페이지</a></li>
+                <li class="mb-2"><a href="main.html" class="hover:underline">메인페이지</a></li>
+                <li class="mb-2"><a href="profile.html" class="hover:underline">개인프로필페이지</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">전시회페이지</a></li>
+            </ul>
+        </div>
+
+        <!-- 헬프센터 -->
+        <div>
+            <h3 class="text-lg font-bold mb-4">웹프과제</h3>
+            <ul>
+                <li class="mb-2"><a href="#" class="hover:underline">-</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">-</a></li>
+                <li class="mb-2"><a href="#" class="hover:underline">-</a></li>
+            </ul>
+        </div>
+
+        <!-- 소셜 및 언어 -->
+        <div>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" class="hover:text-gray-400"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="#" class="hover:text-gray-400"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#" class="hover:text-gray-400"><i class="fab fa-blogger fa-2x"></i></a>
+                <a href="#" class="hover:text-gray-400"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            
+            <div class="text-center">
+                <p class="text-s">제주도 여행 사진 사용</p>
+                <p class="text-xs mt-2 mb-3">직접 여행가서 찍은 제주도 사진입니다.</p>
+                <a href="https://blog.naver.com/park_photo_studio" class="border border-white mt-2 px-4 py-1 rounded hover:bg-white hover:text-black">
+                    더 많은 사진 보기
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 하단 섹션 -->
+    <div class="border-t border-white pt-6 text-sm">
+        <p class="mb-2">
+            상호 : NEXT FRAME | 제작자 : 박성완<br>
+            학번 : 203616 | CSS 프레임 : TailWind<br>
+            Email : tjddhks1725@naver.com
+        </p>
+        <p class="text-xs text-gray-500">Copyright © 2024 NextFrame. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script_mi.js" defer></script>
+</body>
+</html>
