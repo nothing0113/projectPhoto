@@ -32,6 +32,8 @@ const imagePaths = [
     './images/DSCF1858.jpg','./images/DSCF1859.jpg','./images/DSCF1860.jpg'
 ];
 
+
+
 // 메뉴 버튼 클릭 이벤트 설정
 menuButton.addEventListener('click', () => {
     dropdownMenu.classList.toggle('hidden'); // 'hidden' 클래스를 추가/제거하여 메뉴 표시/숨김
@@ -56,7 +58,7 @@ function generateRandomImages() {
     // 섞인 이미지 배열에서 첫 8개 이미지를 갤러리에 추가
     shuffledImages.slice(0, 8).forEach((path, index) => {
         const imageCard = document.createElement('div');
-        imageCard.className = 'p-4';
+        imageCard.className = 'p-2';
 
         imageCard.innerHTML = `
         <div class="aspect-square overflow-hidden group">
@@ -72,3 +74,16 @@ function generateRandomImages() {
         gallery.appendChild(imageCard);
     });
 }
+
+const loginContainer = document.getElementById("login-container");
+const loginText = document.getElementById("login-text");
+
+loginContainer.addEventListener("click", () => {
+    // 로그인 메시지 업데이트
+    loginContainer.innerHTML = `
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A10.943 10.943 0 0112 15c2.326 0 4.468.69 6.121 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0zM12 3c4.418 0 8 3.582 8 8a8 8 0 01-16 0c0-4.418 3.582-8 8-8z" />
+        </svg>
+        <span>안녕하세요 <span class="text-blue-400">박성완</span> 작가님</span>
+    `;
+});
